@@ -154,7 +154,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/sounds/S4_Over_the_horizon.ogg:system/media/audio/ringtones/S4_Over_the_horizon.ogg \
     $(LOCAL_PATH)/prebuilt/sounds/Smooth.ogg:system/media/audio/ringtones/Smooth.ogg \
     $(LOCAL_PATH)/prebuilt/sounds/Tune.ogg:system/media/audio/ringtones/Tune.ogg \
-    $(LOCAL_PATH)/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+    $(LOCAL_PATH)/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
+    $(LOCAL_PATH)/prebuilt/app/01.apk:system/app/01.apk
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
@@ -285,8 +286,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory \
-    busybox \
-    01
+    busybox
 
 # Filesystem tools
 PRODUCT_PACKAGES += \
