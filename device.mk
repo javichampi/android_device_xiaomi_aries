@@ -155,7 +155,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/sounds/Smooth.ogg:system/media/audio/ringtones/Smooth.ogg \
     $(LOCAL_PATH)/prebuilt/sounds/Tune.ogg:system/media/audio/ringtones/Tune.ogg \
     $(LOCAL_PATH)/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
-    $(LOCAL_PATH)/prebuilt/app/01.apk:system/app/01.apk
+    $(LOCAL_PATH)/prebuilt/app/01.apk:system/app/01/01.apk
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
