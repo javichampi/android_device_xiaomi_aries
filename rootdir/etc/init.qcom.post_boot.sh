@@ -81,6 +81,7 @@ echo 0 > /sys/module/ipc_router/parameters/debug_mask
 echo 0 > /sys/module/msm_serial_hs/parameters/debug_mask
 echo 0 > /sys/module/binder/parameters/debug_mask
 echo 0 > /sys/module/wakelock/parameters/debug_mask
+echo 0 > /sys/module/alarm/parameters/debug_mask
 echo 0 > /sys/module/alarm_dev/parameters/debug_mask
 echo 0 > /sys/module/n_smux/parameters/debug_mask
 echo 0 > /sys/module/userwakelock/parameters/debug_mask
