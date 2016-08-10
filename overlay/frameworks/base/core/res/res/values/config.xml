@@ -258,6 +258,8 @@
         <item>hsupa:4094,87380,704512,4096,16384,110208</item>
     </string-array>
 
+    <string name="config_wifi_tcp_buffers" translatable="false">524288,2097152,4194304,262144,524288,1048576</string>
+
     <string-array translatable="false" name="config_globalActionsList">
         <item>power</item>
         <item>reboot</item>
