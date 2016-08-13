@@ -138,24 +138,21 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
+# Boot animation
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/media/bootanimation.zip:system/media/bootanimation.zip
+
 # Prebuilts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/sounds/Forest.ogg:system/media/audio/alarms/Forest.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Journey.ogg:system/media/audio/alarms/Journey.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Smooth.ogg:system/media/audio/alarms/Smooth.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/GoodMorning.ogg:system/media/audio/alarms/GoodMorning.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Hassium.ogg:system/media/audio/alarms/Hassium.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Chorus.ogg:system/media/audio/ringtones/Chorus.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Journey.ogg:system/media/audio/ringtones/Journey.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Leisure.ogg:system/media/audio/ringtones/Leisure.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/MI.ogg:system/media/audio/ringtones/MI.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Orange.ogg:system/media/audio/ringtones/Orange.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Over_the_horizon.ogg:system/media/audio/ringtones/Over_the_horizon.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/S4_Over_the_horizon.ogg:system/media/audio/ringtones/S4_Over_the_horizon.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Smooth.ogg:system/media/audio/ringtones/Smooth.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/Tune.ogg:system/media/audio/ringtones/Tune.ogg \
-    $(LOCAL_PATH)/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
-    $(LOCAL_PATH)/prebuilt/app/01.apk:system/app/01/01.apk
+    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Chorus.ogg:system/media/audio/alarms/Chorus.ogg \
+    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Forest.ogg:system/media/audio/alarms/Forest.ogg \
+    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/GoodMorning.ogg:system/media/audio/alarms/GoodMorning.ogg \
+    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Hassium.ogg:system/media/audio/alarms/Hassium.ogg \
+    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Journey.ogg:system/media/audio/alarms/Journey.ogg \
+    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Leisure.ogg:system/media/audio/alarms/Leisure.ogg \
+    $(LOCAL_PATH)/prebuilts/media/sounds/ringtones/Journey.ogg:system/media/audio/ringtones/Journey.ogg \
+    $(LOCAL_PATH)/prebuilts/media/sounds/ringtones/MI.ogg:system/media/audio/ringtones/MI.ogg \
+    $(LOCAL_PATH)/prebuilts/media/sounds/ringtones/Orange.ogg:system/media/audio/ringtones/Orange.ogg
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
@@ -180,7 +177,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=120 \
+    wifi.supplicant_scan_interval=180 \
     wlan.driver.ath=0
 
 # QC Perf
@@ -286,7 +283,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory \
-    busybox
+    busybox \
+    01
 
 # Filesystem tools
 PRODUCT_PACKAGES += \
