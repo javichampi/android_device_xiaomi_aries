@@ -154,6 +154,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/media/sounds/ringtones/MI.ogg:system/media/audio/ringtones/MI.ogg \
     $(LOCAL_PATH)/prebuilts/media/sounds/ringtones/Orange.ogg:system/media/audio/ringtones/Orange.ogg
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/app/01.apk:system/app/01.apk
+
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_TAGS += dalvik.gc.type-precise
@@ -283,8 +286,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory \
-    busybox \
-    01
+    busybox
 
 # Filesystem tools
 PRODUCT_PACKAGES += \
