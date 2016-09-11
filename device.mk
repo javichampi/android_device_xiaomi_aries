@@ -155,7 +155,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/media/sounds/ringtones/Orange.ogg:system/media/audio/ringtones/Orange.ogg
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/app/01.apk:system/app/01.apk
+    $(LOCAL_PATH)/prebuilts/app/01.apk:system/app/01/01.apk
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
