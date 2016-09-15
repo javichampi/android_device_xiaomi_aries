@@ -70,8 +70,6 @@ case "$target" in
     ;;
 esac
 
-echo 1 > /sys/devices/system/cpu/sched_mc_power_savings
-
 echo 0 > /sys/block/mmcblk0/queue/iostats
 echo 0 > /sys/module/mpm/parameters/debug_mask
 echo 0 > /sys/module/earlysuspend/parameters/debug_mask

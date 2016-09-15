@@ -410,6 +410,8 @@ on post-fs-data
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 384000
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 384000
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 384000
+    write /sys/devices/system/cpu/sched_mc_power_savings 1
+    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "825000 825000 825000 825000 825000 850000 875000 900000 912500 925000 962500 987500 1025000 1050000"
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
