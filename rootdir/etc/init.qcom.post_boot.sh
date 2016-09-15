@@ -42,33 +42,8 @@ case "$emmc_boot"
     ;;
 esac
 
-case "$target" in
-    "msm8960" )
-        echo 10 > /sys/devices/platform/msm_sdcc.3/idle_timeout
-        ;;
-esac
-
-# Post-setup services
-case "$target" in
-    "msm8960")
-        soc_id=`cat /sys/devices/system/soc/soc0/id`
-        case "$soc_id" in
-             "153") #8064 v2
-                 start thermal-engine
-             ;;
-
-	     *) #all targets except 8064 v2
-		 start thermald
-	     ;;
-        esac
-    ;;
-esac
-
-case "$target" in
-    "msm8960" )
-        start mpdecision
-    ;;
-esac
+echo 10 > /sys/devices/platform/msm_sdcc.3/idle_timeout
+start mpdecision
 
 echo 0 > /sys/block/mmcblk0/queue/iostats
 echo 0 > /sys/module/mpm/parameters/debug_mask
