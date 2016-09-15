@@ -43,6 +43,7 @@ case "$emmc_boot"
 esac
 
 echo 10 > /sys/devices/platform/msm_sdcc.1/idle_timeout
+start thermald
 start mpdecision
 
 echo 0 > /sys/block/mmcblk0/queue/iostats
