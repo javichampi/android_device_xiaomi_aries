@@ -411,20 +411,6 @@ on post-fs-data
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 384000
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 384000
     write /sys/devices/system/cpu/sched_mc_power_savings 1
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "384000 825000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "486000 825000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "594000 825000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "702000 825000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "810000 825000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "918000 850000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "1026000 875000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "1134000 900000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "1242000 912500"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "1350000 925000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "1458000 962500"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "1566000 987500"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "1674000 1025000"
-    write /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels "1728000 1050000"
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
