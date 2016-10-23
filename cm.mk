@@ -27,4 +27,6 @@ PRODUCT_LOCALES := zh_CN zh_HK zh_TW en_US
 
 # CM Buildtype
 CM_BUILDTYPE := RELEASE
+# Maintenance version
+TARGET_VENDOR_SHOW_MAINTENANCE_VERSION := true
 
