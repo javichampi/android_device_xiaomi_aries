@@ -264,17 +264,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=pizzicato.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg
 
-# Optimize
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.checkjni=false \
-    ro.config.nocheckin=1 \
-    ro.kernel.android.checkjni=0 \
-    ro.kernel.checkjni=0
-
-# ART
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-flags=--no-watch-dog
-
 # Network
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=1
