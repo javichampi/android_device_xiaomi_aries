@@ -4,7 +4,7 @@ TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product, device/xiaomi/aries/aries.mk)
 
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 PRODUCT_DEVICE := aries
 PRODUCT_NAME := cm_aries
@@ -19,14 +19,3 @@ TARGET_VENDOR_DEVICE_NAME := aries
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=aries \
     BUILD_DISPLAY_ID=$(BUILD_ID)
-
-# Languages
-PRODUCT_DEFAULT_LANGUAGE := zh
-PRODUCT_DEFAULT_REGION := CN
-PRODUCT_LOCALES := zh_CN zh_HK zh_TW en_US
-
-# CM Buildtype
-CM_BUILDTYPE := RELEASE
-# Maintenance version
-TARGET_VENDOR_SHOW_MAINTENANCE_VERSION := true
-
