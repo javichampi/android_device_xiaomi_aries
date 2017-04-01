@@ -190,8 +190,6 @@ BOARD_SEPOLICY_UNION += \
 
 -include vendor/xiaomi/aries/BoardConfigVendor.mk
 
--include device/xiaomi/aries/clean.mk
-
 # Dexopt
 WITH_DEXPREOPT := true
 WITH_DEXPREOPT_BOOT_IMG_ONLY := false
