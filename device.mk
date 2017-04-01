@@ -138,25 +138,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
-# Boot animation
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/media/bootanimation.zip:system/media/bootanimation.zip
-
-# Prebuilts
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Chorus.ogg:system/media/audio/alarms/Chorus.ogg \
-    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Forest.ogg:system/media/audio/alarms/Forest.ogg \
-    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/GoodMorning.ogg:system/media/audio/alarms/GoodMorning.ogg \
-    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Hassium.ogg:system/media/audio/alarms/Hassium.ogg \
-    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Journey.ogg:system/media/audio/alarms/Journey.ogg \
-    $(LOCAL_PATH)/prebuilts/media/sounds/alarms/Leisure.ogg:system/media/audio/alarms/Leisure.ogg \
-    $(LOCAL_PATH)/prebuilts/media/sounds/ringtones/Journey.ogg:system/media/audio/ringtones/Journey.ogg \
-    $(LOCAL_PATH)/prebuilts/media/sounds/ringtones/MI.ogg:system/media/audio/ringtones/MI.ogg \
-    $(LOCAL_PATH)/prebuilts/media/sounds/ringtones/Orange.ogg:system/media/audio/ringtones/Orange.ogg
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/app/01.apk:system/app/01/01.apk
-
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_TAGS += dalvik.gc.type-precise
@@ -239,8 +220,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ADB & USB
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.service.adb.enable=1 \
-    persist.sys.usb.config=mtp,adb
+    persist.service.adb.enable=1
 
 # ADB Debug
 ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -250,27 +230,12 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp \
     ro.vold.umsdirtyratio=50 \
     persist.sys.isUsbOtgEnabled=1
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.gps.qmienabled=true
-
-# Sounds
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Orange.ogg \
-    ro.config.notification_sound=pizzicato.ogg \
-    ro.config.alarm_alert=Alarm_Beep_03.ogg
-
-# Network
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=1
-
-# Regional
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.timezone=Asia/Shanghai
 
 # Optimize
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -361,7 +326,6 @@ PRODUCT_PACKAGES += \
 # CodeAurora
 PRODUCT_PACKAGES += \
     qcmediaplayer \
-    org.codeaurora.Performance \
     javax.btobex \
     libattrib_static \
     libQWiFiSoftApCfg \
