@@ -115,8 +115,7 @@ HAVE_ADRENO_SOURCE := false
 BOARD_EGL_CFG := $(LOCAL_PATH)/rootdir/etc/egl.cfg
 
 # PowerHAL
-TARGET_POWERHAL_VARIANT := cm
-TARGET_POWERHAL_NO_TOUCH_BOOST := true
+TARGET_POWERHAL_VARIANT := qcom
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
@@ -202,8 +201,3 @@ TARGET_BUILD_TYPE := release
 
 # Buildinfo
 BUILD_NUMBER := $(shell date +%Y%m%d)
-
-# Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-cortex_a15-linux-linaro-4.9/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-cortex_a15-linux-gnueabihf-
-
