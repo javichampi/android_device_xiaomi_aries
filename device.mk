@@ -248,6 +248,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-flags=--no-watch-dog
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    qcom.fmradio \
+    FM2
+
 PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory \
@@ -296,7 +301,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8960
+    camera.msm8960 \
+    Snap
 
 # Audio
 PRODUCT_PACKAGES += \
